@@ -22,7 +22,7 @@ class HomeView extends GetView<HomeController> {
                 child: CircularProgressIndicator(),
               );
             }
-            if (snapshot.hasData) {
+            if (!snapshot.hasData) {
               return Center(
                 child: Text("Tidak ada Data"),
               );
